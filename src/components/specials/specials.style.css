@@ -1,0 +1,10 @@
+.sc-bxivhb {
+  width: 300px;
+}
+
+.icon-scroll-left-rpl,
+.icon-scroll-right-rpl {
+  color: var(--palladium);
+  font-size: 35px;
+  cursor: pointer;
+}

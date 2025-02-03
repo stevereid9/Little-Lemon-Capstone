@@ -1,0 +1,32 @@
+:root {
+  --primary-color-viridian-green: #495e57;
+  --primary-color-egg-toast: #f4ce14;
+
+  --secondary-color-dark-salmon: #ee9972;
+  --secondary-color-apricot: #fbdabb;
+
+  --highlight-color-lily-white: #edefee;
+  --highlight-color-carbon: #333;
+
+  --maui-mist: #f5f7f8;
+  --steel-grey: #45474b;
+  --patina: #68877d;
+  --opal: #afc2bc;
+
+  --white: #fff;
+  --black: #000;
+
+  --error: #d71a19;
+  --error-light: #fe8984;
+  --warning: #ffc500;
+
+  --palladium: #b1b1b1;
+  --silver: #d8d8d8;
+
+  --backgrouond-light: #f2f2f2;
+  --viridian-green-opacity: rgb(73, 94, 87, 0.8);
+  --dark-green-opacity: rgba(35, 47, 43, 0.6);
+  --darker-green-opacity: rgba(35, 47, 43, 0.8);
+  --patina-opacity: rgb(104, 135, 125, 0.4);
+  --white-opacity: rgba(255, 255, 255, 0.8);
+}

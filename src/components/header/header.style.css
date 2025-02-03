@@ -1,0 +1,130 @@
+header {
+  grid-row: 1;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+.header-content {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 30px;
+  min-height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.logo {
+  margin-right: 40px;
+}
+
+nav {
+  background-color: var(--white);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav.open {
+  transform: translateX(0) !important;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-link {
+  position: relative;
+  color: var(--patina);
+  transition: all 0.4s;
+}
+
+.nav-link::after {
+  content: " ";
+  position: absolute;
+  top: calc(30% + 1.15rem);
+  left: 0;
+  width: 100%;
+  border-top-width: 2px;
+  border-top-style: solid;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--primary-color-viridian-green);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  margin: 5px 0;
+  height: 2px;
+  width: 27px;
+  background-color: var(--patina);
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover .bar {
+  background-color: var(--primary-color-viridian-green);
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 850px) {
+  .header-content {
+    justify-content: space-between;
+  }
+
+  nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    padding-top: 80px;
+    background-color: var(--primary-color-viridian-green);
+    width: 100%;
+    padding: 10px 0 25px;
+    transform: translateX(-100%);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    color: var(--white);
+  }
+
+  .nav-link:hover {
+    color: var(--patina);
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

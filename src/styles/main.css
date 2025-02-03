@@ -1,0 +1,31 @@
+@import "./_fonts.css";
+@import "./_reset.css";
+@import "./_color.css";
+
+body {
+  padding-top: 100px;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+.rpl-error-message {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--error);
+}
+
+section {
+  width: 100vw;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}

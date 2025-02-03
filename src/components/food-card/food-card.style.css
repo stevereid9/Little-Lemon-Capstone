@@ -1,0 +1,89 @@
+.dish-card-box {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--white);
+  border: 1px solid var(--silver);
+}
+
+.dish-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.dish-card-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
+}
+
+.dish-info-carpl-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px;
+}
+
+.row-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0 20px;
+  border-bottom: 1px solid var(--silver);
+}
+
+.dish-title {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.order-link-box {
+  display: flex;
+  flex-direction: row;
+  vertical-align: bottom;
+  margin: 0 20px;
+  padding: 10px 0 20px;
+  font-weight: 600;
+}
+
+.order-link-box img {
+  margin-left: 20px;
+  height: 22px;
+  width: auto;
+}
+
+.dish-price {
+  font-weight: 600;
+  color: red;
+}
+
+.dish-description {
+  width: 100%;
+  text-align: justify;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--steel-grey);
+}
+
+.order-link {
+  font-family: "Karla", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-color-viridian-green);
+}
+
+.order-link:hover {
+  text-decoration: underline;
+}

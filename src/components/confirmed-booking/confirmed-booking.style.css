@@ -1,0 +1,66 @@
+.booking-confirmation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.booking-confirmation-container .bg-lemon-rpl {
+  width: 100%;
+  height: 120px;
+  background-image: url("../../assets/images/backgrounds/_2458f0ea-a7cf-4798-b609-b5b467cf9930.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.booking-confirmation-container .restaurant-image-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/restaurant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.confirmation-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 600px;
+  min-width: 300px;
+  background-color: var(--darker-green-opacity);
+  border: 6px solid var(--patina-opacity);
+  border-radius: 10px;
+  font-family: "Markazi Text", serif;
+  font-style: normal;
+  font-weight: 300;
+  color: var(--white);
+  text-align: center;
+  line-height: 2rem;
+}
+
+.confirmation-box svg {
+  width: 50px;
+  height: auto;
+}
+
+.confirmation-box h2 {
+  font-size: 2.3rem;
+}
+
+.confirmation-box p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .confirmation-box {
+    margin: 30px;
+  }
+}

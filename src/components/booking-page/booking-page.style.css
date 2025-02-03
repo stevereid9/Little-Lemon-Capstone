@@ -1,0 +1,41 @@
+.booking-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-lemon-rpl {
+  padding: 40px 0;
+  width: 100%;
+  background-image: url("../../assets/images/backgrounds/_2458f0ea-a7cf-4798-b609-b5b467cf9930.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  text-align: center;
+}
+
+.bg-lemon-rpl h2 {
+  padding: 10px 0;
+  margin: 40px auto;
+  width: 100%;
+  color: var(--white);
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.restaurant-image-container {
+  width: 100%;
+  background-image: url("../../assets/images/restaurant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 860px) {
+  .bg-lemon-rpl h2 {
+    padding: 10px 30px;
+    background-color: var(--dark-green-opacity);
+    font-size: 2.5rem;
+  }
+}

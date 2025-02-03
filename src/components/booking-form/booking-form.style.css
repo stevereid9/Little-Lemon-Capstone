@@ -1,0 +1,111 @@
+form.booking-form {
+  display: grid;
+  max-width: 700px;
+  min-width: 320px;
+  gap: 20px;
+  margin: 60px auto;
+  background-color: var(--white-opacity);
+  border: 6px solid var(--patina-opacity);
+  border-radius: 10px;
+}
+
+.booking-form-heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px 30px;
+  width: 100%;
+  background-color: var(--primary-color-viridian-green);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: var(--white);
+}
+
+.booking-form-heading::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--primary-color-viridian-green);
+}
+
+.booking-form-heading p {
+  width: 100%;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.booking-form-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px 40px 40px;
+}
+
+.rpl-form-block-control.full-width {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rpl-form-block-control.full-width > * {
+  margin-bottom: 5px;
+}
+
+.rpl-form-block-combination-control.full-width {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+.rpl-form-block-control.half-width {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rpl-form-block-control.half-width > * {
+  margin-bottom: 5px;
+}
+
+.booking-form label {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--primary-color-viridian-green);
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  border: 1px solid var(--patina);
+  border-radius: 5px;
+  background-color: var(--white-opacity);
+  color: var(--patina);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary-color-viridian-green);
+  outline: var(--primary-color-viridian-green);
+}
+
+.booking-form input,
+.booking-form select {
+  padding-left: 10px;
+  height: 30px;
+}
+
+.booking-form .rpl-input-error {
+  border: 1px solid red;
+}

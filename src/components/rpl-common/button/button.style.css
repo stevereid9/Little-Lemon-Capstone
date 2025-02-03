@@ -1,0 +1,52 @@
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+button > * {
+  margin: auto 5px;
+  vertical-align: middle;
+}
+
+.main-button {
+  padding: 10px 30px;
+  background-color: var(--primary-color-viridian-green);
+  border: 1px solid var(--primary-color-viridian-green);
+  color: var(--white);
+}
+
+.main-button:hover {
+  background-color: var(---maui-mist);
+  color: var(--primary-color-viridian-green);
+}
+
+.booking-form-btn {
+  font-weight: 500;
+}
+
+.rpl-disabled-btn {
+  cursor: not-allowed;
+}
+
+.aboutus-booking-btn {
+  margin-top: 30px;
+  padding: 10px 30px;
+  max-width: 300px;
+  background-color: unset;
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.aboutus-booking-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
